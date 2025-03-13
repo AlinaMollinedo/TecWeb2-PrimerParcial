@@ -1,4 +1,4 @@
-# Tecnoloías Web 2  PrimerParcial
+# Tecnologías Web 2 - PrimerParcial
 
 # Alina Mollinedo Dávila
 
