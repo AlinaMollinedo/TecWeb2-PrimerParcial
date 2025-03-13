@@ -12,14 +12,14 @@ const contador = (req, res, next) => {
     next();
 };
 
-
 const app = express(); 
+
+app.use(contador);
+
 app.use(express.json()); //inicializar express con JSON
 app.use('/api/usuarios', usuariosRouter);
 app.use('/api/productos', productosRouter);
 app.use('/api/contadores', contadoresRouter);
-
-app.use(contador);
 
 app.get('/api/operaciones', (req, res) => {
     res.json({ operacionesRealizadas: contadorOperaciones });
